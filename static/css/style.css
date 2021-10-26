@@ -5,3 +5,15 @@ body {
 #carousel {
     background-color: white;
 }
+
+.gallery {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+
+  .caption-text {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+  }
