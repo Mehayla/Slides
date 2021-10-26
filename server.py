@@ -8,7 +8,6 @@ app = Flask(__name__)
 def show_home():
     """ Landing and home page """
     return render_template('main.html')
-    # return carousel
 
 # @app.route('/api/pictures')
 # def get_pictures():

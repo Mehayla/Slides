@@ -1,56 +1,38 @@
-import React from 'react';
-import useState from 'react-hook-use-state';
+// import React from 'react';
+// import useState from 'react-hook-use-state';
+// import wtf from '../../webpack-demo/src/slide.jsx';
 
-
-const CarouselData = [
-    {image:'/static/images/IMG_6632.JPG',caption:'Phoebe Bridgers in pink lighting'},
-    {image:'/static/images/IMG_6636.JPG',caption:'Phoebe Bridgers preforming in the Greek Theater Los Angeles,CA'},
-    {image:'/static/images/IMG_6637.JPG',caption:'Phoebe Bridgers in blue lighting'},
-    {image:'/static/images/IMG_7719.JPG',caption:'Phoebe Bridgers and the stars'},
-    {image:'/static/images/IMG_7720.JPG',caption:'Phoebe Bridgers singing to a crowd'},
-    {image:'/static/images/IMG_7721.JPG',caption:'Phoebe Bridgers rockin in Austin,TX'},
-    {image:'/static/images/IMG_7745.JPG',caption:'Phoebe Bridgers pink lighting no guitar'},
-    {image:'/static/images/IMG_7746.JPG',caption:'Phoebe Bridgers'},
-    ]
+// const CarouselData = [
+//     {image:'/static/images/IMG_6632.JPG',caption:'Phoebe Bridgers in pink lighting'},
+//     {image:'/static/images/IMG_6636.JPG',caption:'Phoebe Bridgers preforming in the Greek Theater Los Angeles,CA'},
+//     {image:'/static/images/IMG_6637.JPG',caption:'Phoebe Bridgers in blue lighting'},
+//     {image:'/static/images/IMG_7719.JPG',caption:'Phoebe Bridgers and the stars'},
+//     {image:'/static/images/IMG_7720.JPG',caption:'Phoebe Bridgers singing to a crowd'},
+//     {image:'/static/images/IMG_7721.JPG',caption:'Phoebe Bridgers rockin in Austin,TX'},
+//     {image:'/static/images/IMG_7745.JPG',caption:'Phoebe Bridgers pink lighting no guitar'},
+//     {image:'/static/images/IMG_7746.JPG',caption:'Phoebe Bridgers'},
+//     ]
  
 
-function Carousel() {
-    const [current, setCurrent] = useState(0);
-    const length = CarouselData.length
+// function Carousel() {
+//     const [current, setCurrent] = useState(0);
+//     const length = CarouselData.length
 
-    if (!Array.isArray[slides] || slides.length <= 0) {
-        return null;
-    }
+//     if (!Array.isArray[slides] || slides.length <= 0) {
+//         return null;
+//     }
 
-    function nextSlide() {
-        setCurrent(current == length - 1 ? 0: current + 1);
-    }
+//     function nextSlide() {
+//         setCurrent(current == length - 1 ? 0: current + 1);
+//     }
 
-    function previousSlide() {
-        setCurrent(current == 0 ? length - 1: current - 1);
-    }
+//     function previousSlide() {
+//         setCurrent(current == 0 ? length - 1: current - 1);
+//     }
 
-    console.log(current);
+//     console.log(current);
 
-    return (wtf);
-}
-
-const wtf = [
-    <section>
-    <div name='rightarrow' onClick={nextSlide}></div>
-    <div name='leftarrow' onClick={previousSlide}></div>
-
-
-    {CarouselData.map((slide, index) => {
-        return (
-            <div class='gallery' key={index}>
-                <img src={slide.image} alt={slide.caption}/>
-                <div class='caption-text'>{slide.caption}</div>
-            </div>
-        );
-        })}
-    </section>
-]
+//     return (wtf);
 
 
 /* <img src={SliderData[current].image} /> */
@@ -69,4 +51,4 @@ const wtf = [
 //     })
 // }
 
-ReactDOM.render(<Carousel />, document.querySelector('#carousel'));
+// ReactDOM.render(<Carousel />, document.querySelector('#carousel'));
